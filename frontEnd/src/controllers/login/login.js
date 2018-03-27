@@ -17,6 +17,7 @@ hw03.controllers.login.login.prototype = {
 			if (message.authtoken) {
 				window.localStorage.token = message.authtoken;
 			}
+			this.setPage("home", true);
 		}
 		else {
 			alert("Unable to log in: " + message.message);
