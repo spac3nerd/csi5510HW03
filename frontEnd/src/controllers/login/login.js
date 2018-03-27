@@ -12,15 +12,14 @@ hw03.controllers.login.login = function(parent) {
 
 hw03.controllers.login.login.prototype = {
 	
-	_loginCallback: function(message, text, request) {
+	_loginCallback: function(message) {
 		if (message.success) {
 			if (message.authtoken) {
 				window.localStorage.token = message.authtoken;
 			}
-			this.setPage("home", true);
 		}
 		else {
-			alert("Unable to log in" + message.message);
+			alert("Unable to log in: " + message.message);
 		}
 	},
 	
@@ -35,7 +34,7 @@ hw03.controllers.login.login.prototype = {
 			this.service.login(data, this._loginCallback, this);
 		}
 		else {
-			talert("Unable to log in" + validation.message);
+			talert("Unable to log in: " + validation.message);
 		}
 	},
 	

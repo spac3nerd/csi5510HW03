@@ -15,6 +15,7 @@ hw03.controllers.login.signup.prototype = {
 	_signupCallback: function(message) {
 		if (message.success) {
 			alert("Welcome! Please Log in");
+            this.setPage("login", true);
 		}
 		else {
 			alert(message.message);
