@@ -43,3 +43,8 @@ This will have generated a `public` directory in `backEnd` that has the html/js/
     node init.js
 
 1. View the client by pointing a browser at localhost:8080
+
+
+##Logging
+
+The server will log all of the server events and API events. Logs can be viewed in backEnd/log, however the server must be run.
