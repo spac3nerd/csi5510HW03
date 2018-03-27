@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HW03</title>
+		<!-- Load assets -->
+		<script type="text/javascript" src="hw03.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Load templates -->
+		@@hw03_loginPage
+		@@hw03_login
+		@@hw03_signup
+		@@hw03_homePage
+		@@hw03_navbar
+		@@hw03_overview
+		@@hw03_account
+
+	</head>
+	<body OnLoad=init()>
+		
+		<div id="content" class="content"></div>
+	</body> 
+
+	<script type="text/javascript">
+	var app;
+	var init = function() {
+		app = new hw03(document.getElementById("content")).init();
+	};
+	</script>
+
+</html>
