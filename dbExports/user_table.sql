@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2018 at 04:03 AM
+-- Generation Time: Mar 27, 2018 at 04:29 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -41,8 +41,28 @@ CREATE TABLE `user_table` (
 --
 
 INSERT INTO `user_table` (`ID`, `email`, `password`, `address`, `zip`) VALUES
-(0, 'sfbadila@oakland.edu', '$2a$10$2pue8UkToY/dqotJLO3ivOgzW4eh1EuSRgB2L0V8YwV0KJx6AgBwm', '15249 Yellowstone Dr', '48042'),
-(0, 'sorin.badila@yahoo.com', '$2a$10$2pue8UkToY/dqotJLO3ivOgzW4eh1EuSRgB2L0V8YwV0KJx6AgBwm', 'u82636562iil`', '12345');
+(1, 'sfbadila@oakland.edu', '$2a$10$2pue8UkToY/dqotJLO3ivOgzW4eh1EuSRgB2L0V8YwV0KJx6AgBwm', '4423423', '12345'),
+(2, 'sorin.badila@yahoo.com', '$2a$10$2pue8UkToY/dqotJLO3ivOgzW4eh1EuSRgB2L0V8YwV0KJx6AgBwm', 'wjfwjf', 'ejfiwjf');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `user_table`
+--
+ALTER TABLE `user_table`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `user_table`
+--
+ALTER TABLE `user_table`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
